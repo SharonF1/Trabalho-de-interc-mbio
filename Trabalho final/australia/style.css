@@ -1,137 +1,147 @@
 :root {
-    --fundo-lilas: #D6C8E0;  /* Cor de fundo lilás mais suave */
-    --roxo-principal:#173d4f ;
-    --lavanda: #CBA6F7;
-    --rosa-destaque: #F77AC1;
-    --branco: #FFFFFF;
-    --roxo-escuro: #173d4f;
-  }
-  
-  
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background:#849EBF;  /* Alteração da cor de fundo */
-    margin: 0;
-    padding: 20px;
-    padding-top: 75px;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  .card {
-    display: flex;
-    background: var(--branco);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  }
-  
-  .card img {
-    width: 350px;
-    height: auto;
-    max-height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .content {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .content h2 {
-    margin: 0 0 10px;
-    color: var(--roxo-escuro);
-  }
-  
-  .content ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 20px;
-    line-height: 1.5;
-  }
-  
-  .price-box {
-    background: #173d4f;
-    color: var(--branco);
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .price-box .price {
-    font-size: 24px;
-    font-weight: bold;
-    display: block;
-    color: var(--branco); 
-  }
-  
-  .price-box .per {
-    font-size: 12px;
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .price-box button {
-    background: white;
-    color:#173d4f;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  .price-box button:hover {
-    background:  #f0f0f0;
-    color: var(--branco);
-  }
-  
-  .top-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background-color: var(--roxo-principal);
-    color: var(--branco);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 1000;
-    font-family: sans-serif;
-  }
-  
-  .menu-left {
-    font-size: 1.2em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-  }
-  
-  .menu-left a {
-    color: var(--branco);
-    font-size: 24px;
-    text-decoration: none;
-    margin-right: 10px;
-  }
-  
-  .menu-right .flag {
-    position: relative;
-    left: -50px;
-    width: 48px;
-    height: auto;
-    border-radius:3px;
+  --fundo-lilas: #D6C8E0;
+  --roxo-principal: #173d4f;
+  --lavanda: #CBA6F7;
+  --rosa-destaque: #F77AC1;
+  --branco: #FFFFFF;
+  --roxo-escuro: #173d4f;
+  --azul-claro: #85F2F2;
+  --azul-vibrante: #00AEEF;
+  --azul-escuro: #0A2F4F;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #80a7ea, #0a2e77);
+  background-size: 400% 400%;
+  animation: degradeAzul 15s ease infinite;
+  margin: 0;
+  padding: 20px;
+  padding-top: 75px;
+}
+
+@keyframes degradeAzul {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  background: var(--branco);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: 350px;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content h2 {
+  margin: 0 0 10px;
+  color: var(--roxo-escuro);
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+  line-height: 1.5;
+}
+
+.price-box {
+  background: linear-gradient(135deg, #0d0e79, #3b16e0);
+  color: var(--branco);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.price-box .price {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  color: linear-gradient(135deg, #0d0e79, #3b15e3);
+}
+
+.price-box .per {
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.price-box button {
+  background: white;
+  color: var(--roxo-escuro);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.price-box button:hover {
+  background: #f0f0f0;
+  color: var(--branco);
+}
+
+.top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(135deg, #0d0e79, #3b14e8);
+  color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  font-family: sans-serif;
+}
+
+.menu-left {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.menu-left a {
+  color: var(--branco);
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.menu-right .flag {
+  position: relative;
+  left: -50px;
+  width: 48px;
+  height: auto;
+  border-radius: 3px;
 }
