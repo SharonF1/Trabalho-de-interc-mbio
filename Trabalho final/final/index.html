@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Agência de Viagens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>Agência de Intercâmbio Via Mundi - Contato</h1>
+        <form action="#" method="POST">
+            <label>Nome: <input type="text" name="nome" required></label>
+            <label>Sobrenome: <input type="text" name="sobrenome" required></label>
+            <label>E-mail: <input type="email" name="email" required></label>
+            <label>Telefone: <input type="tel" name="telefone" required></label>
+            <label>Como conheceu a gente? 
+                <select name="origem" required>
+                    <option value="">Escolha</option>
+                    <option value="google">Google</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="indicação">Indicação</option>
+                </select>
+            </label>
+
+            <label for="termos">
+                <input type="checkbox" required id="termos">
+                Concordo com o uso dos meus dados pessoais.
+            </label>
+            
+            <div class="checkbox-container">
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="payment-methods">
+            <p>Formas de pagamento:</p>
+            <div class="payment-logos">
+                <img src="imagem/visa.jpg" alt="Visa">
+                <img src="imagem/mastercard.jpg" alt="MasterCard">
+                <img src="imagem/elo.jpg" alt="Elo">
+                <img src="imagem/pix.jpg" alt="Pix">
+            </div>
+        </div>
+
+        <a href="../principal/index.html"><i class="fas fa-home"></i> Voltar para a página inicial</a>
+    </div>
+</body>
+</html>

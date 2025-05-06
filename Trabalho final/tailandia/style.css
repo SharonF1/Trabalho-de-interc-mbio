@@ -1,0 +1,136 @@
+:root {
+  --fundo-lilas: #D6C8E0;  /* Cor de fundo lilás mais suave */
+  --roxo-principal: #9B5DE5;
+  --lavanda: #CBA6F7;
+  --rosa-destaque: #F77AC1;
+  --branco: #FFFFFF;
+  --roxo-escuro: #5D3F6A;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--fundo-lilas);  /* Alteração da cor de fundo */
+  margin: 0;
+  padding: 20px;
+  padding-top: 75px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  background: var(--branco);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: 350px;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content h2 {
+  margin: 0 0 10px;
+  color: var(--roxo-escuro);
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px;
+  line-height: 1.5;
+}
+
+.price-box {
+  background: var(--roxo-principal);
+  color: var(--branco);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.price-box .price {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  color: var(--branco); 
+}
+
+.price-box .per {
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.price-box button {
+  background: var(--lavanda);
+  color: var(--roxo-escuro);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.price-box button:hover {
+  background: var(--roxo-principal);
+  color: var(--branco);
+}
+
+.top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--roxo-principal);
+  color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+  font-family: sans-serif;
+}
+
+.menu-left {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.menu-left a {
+  color: var(--branco);
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.menu-right .flag {
+  position: relative;
+  left: -50px;
+  width: 48px;
+  height: auto;
+  border-radius: 3px;
+}
